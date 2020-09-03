@@ -101,5 +101,7 @@ h2 {
 }
 
 .visitorCounter{
-    display: none;
+    visibility: hidden;
+    position: absolute;
+    top: -9999px;
 }
