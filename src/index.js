@@ -23,7 +23,7 @@ async function getDataFromClipboard() {
             let numberLength = textNumber.length;
             if (numberLength == 10) {
                 await addCode(DEFAULT_CODE);
-                pNumber.value = await addSeperator(textNumber);
+                pNumber.value += await addSeperator(textNumber);
             }
             else if (numberLength == 11 || numberLength == 12 || numberLength == 13) {
                 await addCode(textNumber.substr(0, numberLength - 10));
